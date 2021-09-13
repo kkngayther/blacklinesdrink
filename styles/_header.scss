@@ -1,13 +1,30 @@
 header{
-    background-color: $bgColor2;
+    background-color: $bgColor1;
     display: flex;
     height: 80px;
     justify-content: space-between;
     align-items: center;
+    color: $bgColor2;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 2px solid $bgColor2;
+    .home{
+        font-family: $font1;
+        font-size: 36px;
+    }
     .option{
         ul{
             list-style: none;
             display: flex;
+            margin-bottom: 0;
+        }
+        li{
+            padding: 0 20px;
+        }
+        a{
+            color: $bgColor2;
         }
     }
 }

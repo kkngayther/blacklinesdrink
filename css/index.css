@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;700&family=Kaisei+Tokumin:wght@400;500;700&display=swap");
 header {
-  background-color: #fff;
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +12,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 2px solid #fff;
+}
+
+header .home {
+  font-family: "Kaisei Tokumin", serif;
+  font-size: 36px;
 }
 
 header .option ul {
@@ -19,5 +31,27 @@ header .option ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 0;
+}
+
+header .option li {
+  padding: 0 20px;
+}
+
+header .option a {
+  color: #fff;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel {
+  background-color: #000;
+  height: 100vh;
+  background-image: url(../img/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 /*# sourceMappingURL=index.css.map */
